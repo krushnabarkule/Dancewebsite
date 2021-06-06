@@ -1,6 +1,7 @@
 
 krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website
 $ git status
+
 fatal: not a git repository (or any of the parent directories): .git
 
 krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website
