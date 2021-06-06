@@ -1,0 +1,106 @@
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website
+$ git config --global user.name krushnabarkule
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website
+$ git config --global user.email "krushnabarkule278@gmail.com"
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website
+$ touch .gitignore
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website
+$ git init
+Initialized empty Git repository in E:/Web Development/Dance Website/.git/
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website (master)
+$ git add .
+warning: LF will be replaced by CRLF in package-lock.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 17850a3] Initial commit
+ 20 files changed, 1302 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 app.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 static/bg.jpg
+ create mode 100644 static/img/1.png
+ create mode 100644 static/img/2.png
+ create mode 100644 static/img/3.png
+ create mode 100644 static/img/logo.png
+ create mode 100644 static/img/logo1.png
+ create mode 100644 static/img/logo2.png
+ create mode 100644 static/img/logo3.png
+ create mode 100644 static/img/logo4.png
+ create mode 100644 static/index.js
+ create mode 100644 views/base.pug
+ create mode 100644 views/contact.pug
+ create mode 100644 views/home.pug
+ create mode 100644 views/index.pug
+ create mode 100644 views/style.css
+ create mode 100644 views/stylecontact.css
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website (master)
+$ git remote add origin git@github.com:krushnabarkule/Dancewebsite.git
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website (master)
+$ git push origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website (master)
+$ ssh-keygen -t rsa -b 4096 -C "krushnabarkule278@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/krush/.ssh/id_rsa):
+/c/Users/krush/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/krush/.ssh/id_rsa
+Your public key has been saved in /c/Users/krush/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:rbKWAcwU7svfBmEdQw+HN6fHy5/4ldRTC3cpZpjwK9Y krushnabarkule278@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|    .. .oo.      |
+|   ..   ++= +   .|
+|   +.  . +.O = oo|
+|   .+ o ..o * + =|
+|    .o .So.E . +.|
+|   . .o ... o . o|
+|    o .+.    o o.|
+|     .o+.   . o. |
+|     .o..    ..  |
++----[SHA256]-----+
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website (master)
+$ cat  /c/Users/krush/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYDh19A52QI4v7G4YdUFSPswJkjLb3zAZv1zTkM6LvL28i1+HqAg4vWVgZGMY77MpByxlnBWAVoyb3psLKfOJC6GPXqtRzs6WTOjUF/TgUbR+ynl0ZhmDyXoOrNW6XV0TJvUnh/fFev5zN/j9nKWIffADZ/GJdnXNyzlXf+FduyMr8bcsLmmCJFJHjyagD6/Nb27Qg+KN7XDTCFcCp2twgHQ9rdikP/1+s7ff4/mwH9kGg+thK8OhYHe2g9qRPZt1qWnrhIwtQrA9r26DCti51fnqgP+7wYqgBbW9xJJp+gaoVXQ7UncukTkdHiTUZT/vMkEU9TFPWUBMnyej/lQBiqK0i6uKqi+pM5aQZuIFylWhCq1WDVaTh3gu+Fjy+4IM9KPtKhjvnpe9FXNsKr44P8X+uWSGMOIhcbrFMRnu6c2a4xarOHRlC2b0bWPh5fVldWr8vRolECVBxj3gc/vSjcrwdI2iaGAmQD/GReEdd/RhRXhOlClRTcxGJSbFPGJPvZFKpHXIyjLj2q8MykX4R6GtIPD+lJNLTq0/NuzyaVHieTKkrIpmBVUWAAa7pH+kH0MDOi4IJGOXGXSwbu5JDnIGbza+/rQSbNwTsP2snifJMNA9VSEdt73EsGdie3Vis92vNOPIEDLpLA+DjdLRHKvp2dhAyS9UfNtJj+QOTAw== krushnabarkule278@gmail.com
+
+krush@LAPTOP-FL0AH7DV MINGW64 /e/Web Development/Dance Website (master)
+$ git push origin master
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (25/25), 5.21 MiB | 90.00 KiB/s, done.
+Total 25 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:krushnabarkule/Dancewebsite.git
+ * [new branch]      master -> master
